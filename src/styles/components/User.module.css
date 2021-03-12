@@ -17,6 +17,10 @@
   object-fit: cover;
 }
 
+.userData {
+  padding: 0.5rem 1rem;
+}
+
 .userContainer ul {
   list-style: none;
 }
