@@ -8,7 +8,8 @@
   <a href='live-preview'>Live Preview</a> ·
   <a href='technologies-used'>Technologies Used</a> ·
   <a href='features'>Features</a> ·
-  <a href='start-the-project'>Start the Project</a>
+  <a href='start-the-project'>Start the Project</a> ·
+  <a href='license'>License</a>
 </p>
 
 ## Live Preview
@@ -33,3 +34,7 @@ In the project directory:
 `npm install`
 
 `npm start`
+
+## License
+
+Distributed under the MIT License. See `LICENSE` for more information.
