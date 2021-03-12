@@ -5,7 +5,13 @@ import styles from '../styles/components/User.module.css'
 export const User = props => {
   return (
     <div className={styles.userContainer}>
-      <img src={props.profileUrl} alt={props.name} width='200px' />
+      <img
+        src={
+          props.profileUrl ||
+          'https://avatars.githubusercontent.com/u/43142456?v=4'
+        }
+        alt={props.name}
+      />
 
       <ul>
         <h2>Dados do Usuário</h2>
