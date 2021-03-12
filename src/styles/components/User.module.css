@@ -5,3 +5,13 @@
 .userContainer ul {
   list-style: none;
 }
+
+.userContainer ul h2 {
+  line-height: 2;
+  border-bottom: 1px solid var(--surface);
+  margin-bottom: 0.5rem;
+}
+
+.userContainer li {
+  line-height: 1.7;
+}
