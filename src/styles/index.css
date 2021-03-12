@@ -24,3 +24,8 @@ h5,
 h6 {
   font-weight: 500;
 }
+
+a,
+input {
+  font-family: inherit;
+}
