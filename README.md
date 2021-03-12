@@ -14,6 +14,8 @@
 
 ## Live Preview
 
+https://github-profiles-liart.vercel.app/
+
 ## Technologies Used
 
 - CSS Modules
