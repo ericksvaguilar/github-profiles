@@ -1,8 +1,10 @@
 import { SearchBar } from './components/SearchBar'
 
+import styles from './styles/App.module.css'
+
 export const App = () => {
   return (
-    <div>
+    <div className={styles.appContainer}>
       <SearchBar />
     </div>
   )
