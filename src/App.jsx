@@ -11,7 +11,13 @@ export const App = () => {
   return (
     <div className={styles.appContainer}>
       <SearchBar onChange={e => handleChange(e)} />
-      <User />
+      <User
+        profileUrl={''}
+        name={'Erick Aguilar'}
+        username={'ericksvaguilar'}
+        followersCount={10}
+        repositoriesCount={20}
+      />
     </div>
   )
 }
