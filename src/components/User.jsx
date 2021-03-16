@@ -26,12 +26,10 @@ export const User = props => {
   )
 }
 
-import React from 'react'
-
-const User = props => {
-  return <div></div>
+User.propTypes = {
+  profileUrl: PropTypes.string.isRequired,
+  name: PropTypes.string.isRequired,
+  username: PropTypes.string.isRequired,
+  followersCount: PropTypes.number.isRequired,
+  repositoriesCount: PropTypes.number.isRequired,
 }
-
-User.propTypes = {}
-
-export default User
