@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 
 import styles from '../styles/components/User.module.css'
 
@@ -24,3 +25,13 @@ export const User = props => {
     </div>
   )
 }
+
+import React from 'react'
+
+const User = props => {
+  return <div></div>
+}
+
+User.propTypes = {}
+
+export default User
