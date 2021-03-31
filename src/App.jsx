@@ -6,6 +6,7 @@ import styles from './styles/App.module.css'
 
 export const App = () => {
   const [username, setUsername] = useState('')
+  const [user, setUser] = useState({})
 
   const handleChange = e => {
     setUsername(e.target.value)
@@ -16,7 +17,16 @@ export const App = () => {
     fetch(`https://api.github.com/users/${username}`)
       .then(response => response.json())
       .then(
-        user => console.log(user),
+        user => {
+          console.log(user)
+          return setUser({
+            profileUrl: user.avatar_url,
+            name: user.name,
+            username: user.login,
+            followersCount: user.followers,
+            repositoriesCount: user.public_repos,
+          })
+        },
         error => console.error(error)
       )
   }
@@ -28,11 +38,11 @@ export const App = () => {
         onChange={e => handleChange(e)}
       />
       <User
-        profileUrl={''}
-        name={'Erick Aguilar'}
-        username={'ericksvaguilar'}
-        followersCount={10}
-        repositoriesCount={20}
+        profileUrl={user.profileUrl || ''}
+        name={user.name || ''}
+        username={user.username || ''}
+        followersCount={user.followersCount || 0}
+        repositoriesCount={user.repositoriesCount || 0}
       />
     </div>
   )
